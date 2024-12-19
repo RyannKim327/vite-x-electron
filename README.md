@@ -21,3 +21,8 @@ npm install electron --save-dev
 ```
 npm create vite@latest
 ```
+
+---
+### Script
+1. Application `npm run app`
+2. Web `npm run web`
