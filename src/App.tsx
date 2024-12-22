@@ -1,7 +1,13 @@
+import Form from "./pages/form";
+import Index from "./pages/index";
+
 function App() {
   return (
     <div className="h-dvh w-dvw">
-      <h3>Welcome to my Sample project</h3>
+      <div className="flex flex-col items-center">
+        <Index />
+        <Form />
+      </div>
     </div>
   );
 }
