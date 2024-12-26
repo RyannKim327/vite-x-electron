@@ -1,0 +1,27 @@
+.mpop-input {
+  position: relative !important;
+
+  >span {
+    position: absolute;
+    z-index: 1;
+    top: .5rem;
+    left: .5rem;
+    box-sizing: border-box;
+    /* width: 100%; */
+    user-select: none;
+    transition: transform 0.2s ease, color .2s ease;
+    transform: translateY(0) scale(1);
+  }
+
+  >input {
+    box-sizing: border-box;
+    width: 100%;
+
+    &:not(&:placeholder-shown),
+    &:focus {
+      ~span {
+        transform: translateY(-90%) scale(0.75);
+      }
+    }
+  }
+}
