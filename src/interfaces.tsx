@@ -7,4 +7,6 @@ export interface inputs {
   children: string
   type: string
   name: string
+  value?: string | number | boolean
+  onChange?: object
 }
